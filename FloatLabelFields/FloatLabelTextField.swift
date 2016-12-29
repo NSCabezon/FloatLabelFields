@@ -14,12 +14,12 @@
 
 import UIKit
 
-@IBDesignable class FloatLabelTextField: UITextField {
+@IBDesignable public class FloatLabelTextField: UITextField {
 	let animationDuration = 0.3
 	var title = UILabel()
 	
 	// MARK:- Properties
-	override var accessibilityLabel:String? {
+	override public var accessibilityLabel:String? {
 		get {
 			if let txt = text , txt.isEmpty {
 				return title.text
@@ -32,14 +32,14 @@ import UIKit
 		}
 	}
 	
-	override var placeholder:String? {
+	override public var placeholder:String? {
 		didSet {
 			title.text = placeholder
 			title.sizeToFit()
 		}
 	}
 	
-	override var attributedPlaceholder:NSAttributedString? {
+	override public var attributedPlaceholder:NSAttributedString? {
 		didSet {
 			title.text = attributedPlaceholder?.string
 			title.sizeToFit()
@@ -80,7 +80,7 @@ import UIKit
 	}
 		
 	// MARK:- Init
-	required init?(coder aDecoder:NSCoder) {
+	required public init?(coder aDecoder:NSCoder) {
 		super.init(coder:aDecoder)
 		setup()
 	}
@@ -91,7 +91,7 @@ import UIKit
 	}
 	
 	// MARK:- Overrides
-	override func layoutSubviews() {
+	override public func layoutSubviews() {
 		super.layoutSubviews()
 		setTitlePositionForTextAlignment()
 		let isResp = isFirstResponder
@@ -110,7 +110,7 @@ import UIKit
 		}
 	}
 	
-	override func textRect(forBounds bounds:CGRect) -> CGRect {
+	override public func textRect(forBounds bounds:CGRect) -> CGRect {
 		var r = super.textRect(forBounds: bounds)
 		if let txt = text , !txt.isEmpty {
 			var top = ceil(title.font.lineHeight + hintYPadding)
@@ -120,7 +120,7 @@ import UIKit
 		return r.integral
 	}
 	
-	override func editingRect(forBounds bounds:CGRect) -> CGRect {
+	override public func editingRect(forBounds bounds:CGRect) -> CGRect {
 		var r = super.editingRect(forBounds: bounds)
 		if let txt = text , !txt.isEmpty {
 			var top = ceil(title.font.lineHeight + hintYPadding)
@@ -130,7 +130,7 @@ import UIKit
 		return r.integral
 	}
 	
-	override func clearButtonRect(forBounds bounds:CGRect) -> CGRect {
+	override public func clearButtonRect(forBounds bounds:CGRect) -> CGRect {
 		var r = super.clearButtonRect(forBounds: bounds)
 		if let txt = text , !txt.isEmpty {
 			var top = ceil(title.font.lineHeight + hintYPadding)

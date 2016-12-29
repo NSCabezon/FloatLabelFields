@@ -10,8 +10,6 @@
 		64A17C551E15333B00DBA696 /* FloatLabelFields.h in Headers */ = {isa = PBXBuildFile; fileRef = 64A17C531E15333B00DBA696 /* FloatLabelFields.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		64A17C591E15334200DBA696 /* FloatLabelTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDC84CB51A28902000040F0F /* FloatLabelTextField.swift */; };
 		64A17C5A1E15334200DBA696 /* FloatLabelTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDC84CB61A28902000040F0F /* FloatLabelTextView.swift */; };
-		64A17C5D1E153E6300DBA696 /* FloatLabelTextField.swift in Headers */ = {isa = PBXBuildFile; fileRef = DDC84CB51A28902000040F0F /* FloatLabelTextField.swift */; settings = {ATTRIBUTES = (Public, ); }; };
-		64A17C5E1E153E6300DBA696 /* FloatLabelTextView.swift in Headers */ = {isa = PBXBuildFile; fileRef = DDC84CB61A28902000040F0F /* FloatLabelTextView.swift */; settings = {ATTRIBUTES = (Public, ); }; };
 		DD72F5ED1A2845270097D54A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD72F5EC1A2845270097D54A /* AppDelegate.swift */; };
 		DD72F5EF1A2845270097D54A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD72F5EE1A2845270097D54A /* ViewController.swift */; };
 		DD72F5F21A2845270097D54A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DD72F5F01A2845270097D54A /* Main.storyboard */; };
@@ -120,8 +118,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				64A17C551E15333B00DBA696 /* FloatLabelFields.h in Headers */,
-				64A17C5D1E153E6300DBA696 /* FloatLabelTextField.swift in Headers */,
-				64A17C5E1E153E6300DBA696 /* FloatLabelTextView.swift in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -171,7 +167,7 @@
 			attributes = {
 				LastSwiftMigration = 0730;
 				LastSwiftUpdateCheck = 0730;
-				LastUpgradeCheck = 0730;
+				LastUpgradeCheck = 0820;
 				ORGANIZATIONNAME = "RookSoft Ltd.";
 				TargetAttributes = {
 					64A17C501E15333B00DBA696 = {
@@ -341,8 +337,10 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -351,6 +349,7 @@
 				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
@@ -385,8 +384,10 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -394,6 +395,7 @@
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
 				GCC_WARN_UNDECLARED_SELECTOR = YES;
@@ -403,6 +405,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 			};
