@@ -10,6 +10,8 @@
 		64A17C551E15333B00DBA696 /* FloatLabelFields.h in Headers */ = {isa = PBXBuildFile; fileRef = 64A17C531E15333B00DBA696 /* FloatLabelFields.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		64A17C591E15334200DBA696 /* FloatLabelTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDC84CB51A28902000040F0F /* FloatLabelTextField.swift */; };
 		64A17C5A1E15334200DBA696 /* FloatLabelTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDC84CB61A28902000040F0F /* FloatLabelTextView.swift */; };
+		64A17C5D1E153E6300DBA696 /* FloatLabelTextField.swift in Headers */ = {isa = PBXBuildFile; fileRef = DDC84CB51A28902000040F0F /* FloatLabelTextField.swift */; settings = {ATTRIBUTES = (Public, ); }; };
+		64A17C5E1E153E6300DBA696 /* FloatLabelTextView.swift in Headers */ = {isa = PBXBuildFile; fileRef = DDC84CB61A28902000040F0F /* FloatLabelTextView.swift */; settings = {ATTRIBUTES = (Public, ); }; };
 		DD72F5ED1A2845270097D54A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD72F5EC1A2845270097D54A /* AppDelegate.swift */; };
 		DD72F5EF1A2845270097D54A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD72F5EE1A2845270097D54A /* ViewController.swift */; };
 		DD72F5F21A2845270097D54A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DD72F5F01A2845270097D54A /* Main.storyboard */; };
@@ -118,6 +120,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				64A17C551E15333B00DBA696 /* FloatLabelFields.h in Headers */,
+				64A17C5D1E153E6300DBA696 /* FloatLabelTextField.swift in Headers */,
+				64A17C5E1E153E6300DBA696 /* FloatLabelTextView.swift in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
